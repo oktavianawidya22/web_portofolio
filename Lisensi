@@ -1,1 +1,42 @@
 
+---
+
+## **Ringkasan Perintah**
+| **Langkah**         | **Perintah**                                   |
+|-------------------|-----------------------------------------------|
+| **Buat Repositori GitHub** | Melalui antarmuka web di GitHub       |
+| **Inisialisasi Git**       | `git init`                            |
+| **Buat .gitignore**       | Tambahkan file .gitignore               |
+| **Tambah file ke Git**    | `git add .`                            |
+| **Buat commit**           | `git commit -m "Initial commit"`       |
+| **Hubungkan ke GitHub**   | `git remote add origin <URL_REPO>`     |
+| **Upload ke GitHub**      | `git push -u origin main`              |
+
+---
+
+## **Contoh Keseluruhan Perintah**
+```bash
+# Arahkan ke folder proyek
+cd D:\Belajar\Python\Portofolio\web_portofolio\Web_portofolio
+
+# Inisialisasi git
+git init
+
+# Buat file .gitignore
+echo "env/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "*.sqlite3" >> .gitignore
+
+# Tambahkan file ke git
+git add .
+
+# Buat commit
+git commit -m "Initial commit for web_portofolio project"
+
+# Hubungkan ke GitHub
+git remote add origin https://github.com/username/web_portofolio.git
+
+# Upload ke GitHub
+git push -u origin main
+
